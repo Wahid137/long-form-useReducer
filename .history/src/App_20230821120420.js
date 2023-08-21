@@ -1,10 +1,7 @@
 import LongForm from "./pages/LongForm";
 
 function App() {
-  return (
-    <LongForm />
-  )
-
+  return <LongForm />;
 }
 
 export default App;

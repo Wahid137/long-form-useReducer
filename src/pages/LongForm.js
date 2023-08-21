@@ -6,7 +6,6 @@ const LongForm = () => {
 
   const submit = (event) => {
     event.preventDefault();
-
     console.log(state);
   };
 
@@ -143,15 +142,16 @@ const LongForm = () => {
         <div className='flex flex-col w-full max-w-xs'>
           <label className='mb-3'>Number of PCs</label>
           <div className='flex justify-between items-center gap-2 '>
-            <button className='bg-indigo-500 text-lg text-white rounded h-10 w-10 '>
+            <label onClick={() => dispatch({ type: "DECREMENT" })} className='bg-indigo-500 text-lg text-white rounded h-10 w-10 flex justify-center items-center'
+            >
               -
-            </button>
+            </label>
             <div className='border flex-1 flex justify-center items-center h-10 rounded-md border-gray-300'>
-              <span className='text-lg'>0</span>
+              <span className='text-lg'>{state.quantity}</span>
             </div>
-            <button className='bg-indigo-500 text-lg text-white rounded h-10 w-10'>
+            <label onClick={() => dispatch({ type: "INCREMENT" })} className='bg-indigo-500 text-lg items-center flex justify-center text-white rounded h-10 w-10'>
               +
-            </button>
+            </label>
           </div>
         </div>
         <div className='flex flex-col w-full max-w-xs'>

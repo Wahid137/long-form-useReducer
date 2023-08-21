@@ -2,7 +2,7 @@ import LongForm from "./pages/LongForm";
 
 function App() {
   return (
-    <LongForm />
+    <ShortForm></ShortForm>
   )
 
 }

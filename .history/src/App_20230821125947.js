@@ -1,8 +1,9 @@
 import LongForm from "./pages/LongForm";
+import ShortForm from "./pages/LongForm";
 
 function App() {
   return (
-    <LongForm />
+    <ShortForm></ShortForm>
   )
 
 }
